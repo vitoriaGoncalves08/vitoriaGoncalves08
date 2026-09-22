@@ -1,75 +1,49 @@
-<svg width="745" height="354" viewBox="0 0 745 354" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="745" height="354" rx="10" fill="#282a36" />
-  <path d="M0,10 a10,10 0 0 1 10,-10 h725 a10,10 0 0 1 10,10 v24 h-745 z"
+<svg width="534" height="298" viewBox="0 0 534 298" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="534" height="298" rx="10" fill="#282a36" />
+  <path d="M0,10 a10,10 0 0 1 10,-10 h514 a10,10 0 0 1 10,10 v24 h-534 z"
         fill="#21222c" />
   <circle cx="24" cy="17" r="6" fill="#ff5555" />
   <circle cx="46" cy="17" r="6" fill="#f1fa8c" />
   <circle cx="68" cy="17" r="6" fill="#50fa7b" />
-  <text x="372" y="22" text-anchor="middle"
+  <text x="267" y="22" text-anchor="middle"
         font-family="Courier New, monospace" font-size="13" fill="#6272a4">vitoriaGoncalves08@github: status</text>
-  <line x1="0" y1="34" x2="745" y2="34" stroke="#3a3d55" stroke-width="1" />
-  <svg x="16" y="50" width="713" height="288" viewBox="0 0 713 288">
+  <line x1="0" y1="34" x2="534" y2="34" stroke="#3a3d55" stroke-width="1" />
+  <svg x="16" y="50" width="502" height="232" viewBox="0 0 502 232">
     <style>
-    .row { animation: reveal 0.35s steps(1) forwards; opacity: 0; }
+    .segment {
+      animation: drawIn 0.6s ease-out both;
+    }
+    @keyframes drawIn {
+      from { opacity: 0; stroke-width: 0; }
+      to { opacity: 1; stroke-width: 28; }
+    }
+    .legend-row { animation: reveal 0.35s steps(1) forwards; opacity: 0; }
     @keyframes reveal { to { opacity: 1; } }
+    .center-label { font-family: Courier New, monospace; fill: #bd93f9; text-anchor: middle; }
+    #spinner {
+      transform-origin: 116.0px 116.0px;
+      animation: spin 26s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(-90deg); }
+      to { transform: rotate(270deg); }
+    }
   </style>
-  <rect width="713" height="288" fill="#282a36" />
+  <rect width="502" height="232" fill="#282a36" />
+  <g id="spinner">
+    
+    <circle cx="116.0" cy="116.0" r="74" fill="none" stroke="#bd93f9" stroke-width="28"
+            stroke-dasharray="464.96 0.00"
+            stroke-dashoffset="-0.00"
+            class="segment" style="animation-delay:0.0s" />
+  </g>
+  <text x="116.0" y="112.0" class="center-label" font-size="12" font-weight="bold">TOP 1</text>
+  <text x="116.0" y="130.0" class="center-label" font-size="10" fill="#6272a4">LANGUAGES</text>
   
-  <g style="animation-delay:0.00s" class="row">
-    <circle cx="29" cy="34" r="5" fill="#F7DF1E" />
-    <text x="42" y="38" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">JavaScript</text>
-    <rect x="174" y="28" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="28" width="166.5" height="12" rx="6" fill="#F7DF1E" />
-    <text x="644" y="38" font-family="Courier New, monospace" font-size="12" fill="#6272a4">36.2%</text>
-  </g>
-  <g style="animation-delay:0.08s" class="row">
-    <circle cx="29" cy="64" r="5" fill="#3178C6" />
-    <text x="42" y="68" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">TypeScript</text>
-    <rect x="174" y="58" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="58" width="126.1" height="12" rx="6" fill="#3178C6" />
-    <text x="644" y="68" font-family="Courier New, monospace" font-size="12" fill="#6272a4">27.4%</text>
-  </g>
-  <g style="animation-delay:0.16s" class="row">
-    <circle cx="29" cy="94" r="5" fill="#ED8B00" />
-    <text x="42" y="98" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">Java</text>
-    <rect x="174" y="88" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="88" width="72.3" height="12" rx="6" fill="#ED8B00" />
-    <text x="644" y="98" font-family="Courier New, monospace" font-size="12" fill="#6272a4">15.7%</text>
-  </g>
-  <g style="animation-delay:0.24s" class="row">
-    <circle cx="29" cy="124" r="5" fill="#1572B6" />
-    <text x="42" y="128" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">CSS</text>
-    <rect x="174" y="118" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="118" width="66.5" height="12" rx="6" fill="#1572B6" />
-    <text x="644" y="128" font-family="Courier New, monospace" font-size="12" fill="#6272a4">14.5%</text>
-  </g>
-  <g style="animation-delay:0.32s" class="row">
-    <circle cx="29" cy="154" r="5" fill="#E34F26" />
-    <text x="42" y="158" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">HTML</text>
-    <rect x="174" y="148" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="148" width="15.6" height="12" rx="6" fill="#E34F26" />
-    <text x="644" y="158" font-family="Courier New, monospace" font-size="12" fill="#6272a4">3.4%</text>
-  </g>
-  <g style="animation-delay:0.40s" class="row">
-    <circle cx="29" cy="184" r="5" fill="#777BB4" />
-    <text x="42" y="188" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">PHP</text>
-    <rect x="174" y="178" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="178" width="7.6" height="12" rx="6" fill="#777BB4" />
-    <text x="644" y="188" font-family="Courier New, monospace" font-size="12" fill="#6272a4">1.7%</text>
-  </g>
-  <g style="animation-delay:0.48s" class="row">
-    <circle cx="29" cy="214" r="5" fill="#bd93f9" />
-    <text x="42" y="218" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">Hack</text>
-    <rect x="174" y="208" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="208" width="4.4" height="12" rx="6" fill="#bd93f9" />
-    <text x="644" y="218" font-family="Courier New, monospace" font-size="12" fill="#6272a4">1.0%</text>
-  </g>
-  <g style="animation-delay:0.56s" class="row">
-    <circle cx="29" cy="244" r="5" fill="#00599C" />
-    <text x="42" y="248" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">C++</text>
-    <rect x="174" y="238" width="460" height="12" rx="6" fill="#3a3d55" />
-    <rect x="174" y="238" width="0.9" height="12" rx="6" fill="#00599C" />
-    <text x="644" y="248" font-family="Courier New, monospace" font-size="12" fill="#6272a4">0.2%</text>
+  <g class="legend-row" style="animation-delay:0.3s">
+    <circle cx="249.0" cy="112.0" r="5" fill="#bd93f9" />
+    <text x="262.0" y="116.0" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">N/A</text>
+    <text x="474.0" y="116.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">100.0%</text>
   </g>
 
   </svg>
