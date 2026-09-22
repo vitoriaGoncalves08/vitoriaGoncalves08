@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/profile.svg" alt="animated ascii profile card" width="100%" />
+</p>
+
+<br>
+
+---
+
 <h1 align="center">Olá, eu sou a Vitória Gonçalves ✨</h1>
 
 <br>
@@ -25,8 +33,7 @@
 <h3 align="center">Github Stats</h3>
 
 <p align="center">
-  <img height="190" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=card" />
-  <img height="190" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=pie" />
+  <img height="340" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=pie" />
 </p>
 
 <br>
@@ -36,7 +43,7 @@
 <h3 align="center">Tech Stack & Tools</h3>
 
 <p align="center">
-  <img src="https://stats.pphat.top/icons?name=js,react,html,css,python,java&effect=wave&columns=6" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,angular,java,spring,aws,git,docker,py&perline=6" />
 </p>
 
 <br>
