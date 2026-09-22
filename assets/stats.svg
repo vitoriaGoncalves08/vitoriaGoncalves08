@@ -1,0 +1,342 @@
+<svg width="832" height="466" viewBox="0 0 832 466" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="832" height="466" rx="10" fill="#282a36" />
+  <path d="M0,10 a10,10 0 0 1 10,-10 h812 a10,10 0 0 1 10,10 v24 h-832 z"
+        fill="#21222c" />
+  <circle cx="24" cy="17" r="6" fill="#ff5555" />
+  <circle cx="46" cy="17" r="6" fill="#f1fa8c" />
+  <circle cx="68" cy="17" r="6" fill="#50fa7b" />
+  <text x="416" y="22" text-anchor="middle"
+        font-family="Courier New, monospace" font-size="13" fill="#6272a4">vitoriaGoncalves08@github: stats</text>
+  <line x1="0" y1="34" x2="832" y2="34" stroke="#3a3d55" stroke-width="1" />
+  <svg x="16" y="50" width="800" height="400" viewBox="0 0 800 400">
+    <defs>
+                <!-- Advanced gradient backgrounds -->
+                <radialGradient id="futureBg" cx="50%" cy="50%" r="80%">
+                    <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+                    <stop offset="40%" style="stop-color:#0a0e2e;stop-opacity:0.9" />
+                    <stop offset="80%" style="stop-color:#050810;stop-opacity:0.95" />
+                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                </radialGradient>
+
+                <linearGradient id="techAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#00c8ff;stop-opacity:0.8" />
+                    <stop offset="50%" style="stop-color:#00c8ff;stop-opacity:0.5" />
+                    <stop offset="100%" style="stop-color:#00c8ff;stop-opacity:0.3" />
+                </linearGradient>
+
+                <!-- Neon glow effects -->
+                <filter id="neonGlow" x="-80%" y="-80%" width="260%" height="260%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2.6666666666666665" result="blur1"/>
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5.333333333333333" result="blur2"/>
+                    <feMerge>
+                        <feMergeNode in="blur2"/>
+                        <feMergeNode in="blur1"/>
+                    </feMerge>
+                </filter>
+
+                <filter id="innerGlow" x="-40%" y="-40%" width="180%" height="180%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+                <filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1.3333333333333333" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+                <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.6666666666666666" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+                <!-- Data flow pattern -->
+                <pattern id="dataFlow" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <line x1="0" y1="0" x2="40" y2="40" stroke="#00c8ff" stroke-width="0.5" opacity="0.1" />
+                    <line x1="40" y1="0" x2="0" y2="40" stroke="#00c8ff" stroke-width="0.5" opacity="0.1" />
+                </pattern>
+            </defs>
+
+            <style>
+                @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 400 900; font-display: swap; src: url(/fonts/orbitron.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+                text {
+                    font-family: 'Orbitron', 'Ubuntu', 'sans-serif';
+                    font-weight: 700;
+                    letter-spacing: 0.3333333333333333px;
+                }
+
+                @keyframes fadeInScale {
+                    0% { opacity: 0; transform: scale(0.8); }
+                    100% { opacity: 1; transform: scale(1); }
+                }
+
+                @keyframes slideInRight {
+                    0% { opacity: 0; transform: translateX(30px); }
+                    100% { opacity: 1; transform: translateX(0); }
+                }
+
+                @keyframes pulseGlow {
+                    0%, 100% { filter: drop-shadow(0 0 8px currentColor); }
+                    50% { filter: drop-shadow(0 0 16px currentColor); }
+                }
+
+                @keyframes scan {
+                    0% { transform: translateY(-100%); }
+                    100% { transform: translateY(100%); }
+                }
+
+                @keyframes drift {
+                    0%, 100% { transform: translate(0, 0); }
+                    50% { transform: translate(2px, -2px); }
+                }
+
+                @keyframes floatParticle {
+                    0% { transform: translate(0, 0); opacity: 0; }
+                    10% { opacity: 1; }
+                    90% { opacity: 1; }
+                    100% { transform: translate(var(--tx), var(--ty)); opacity: 0; }
+                }
+
+                .tech-slice {
+                    animation: fadeInScale 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+                    transform-origin: 400px 200px;
+                }
+
+                .tech-item {
+                    animation: slideInRight 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+                }
+
+                .quantum-particle {
+                    animation: floatParticle 6s linear infinite;
+                    --tx: calc((Math.random() - 0.5) * 266.66666666666663px);
+                    --ty: calc((Math.random() - 0.5) * 200px);
+                }
+            </style>
+
+            <!-- Background with futuristic grid -->
+            <rect width="800" height="400" fill="url(#futureBg)" />
+            <rect width="800" height="400" fill="url(#dataFlow)" />
+            <rect width="800" height="400" fill="#000000" opacity="0.2" />
+
+            <!-- Scan line effect -->
+            <rect width="800" height="1.3333333333333333" fill="#00c8ff" opacity="0.05" class="scan-line" style="animation: scan 8s linear infinite" />
+
+            <!-- Tech grid lines -->
+            <g class="tech-grid" opacity="0.05">
+                <line x1="400.0" y1="120.0" x2="400.0" y2="40.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="440.0" y1="130.7" x2="480.0" y2="61.4" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="469.3" y1="160.0" x2="538.6" y2="120.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="480.0" y1="200.0" x2="560.0" y2="200.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="469.3" y1="240.0" x2="538.6" y2="280.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="440.0" y1="269.3" x2="480.0" y2="338.6" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="400.0" y1="280.0" x2="400.0" y2="360.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="360.0" y1="269.3" x2="320.0" y2="338.6" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="330.7" y1="240.0" x2="261.4" y2="280.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="320.0" y1="200.0" x2="240.0" y2="200.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="330.7" y1="160.0" x2="261.4" y2="120.0" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" /><line x1="360.0" y1="130.7" x2="320.0" y2="61.4" stroke="#00c8ff" stroke-width="0.7" opacity="0.15" />
+            </g>
+
+            <!-- Concentric tech circles -->
+            <g class="tech-circles">
+                <circle cx="400" cy="200" r="66.66666666666666" fill="none" stroke="#00c8ff" stroke-width="0.5" opacity="0.10" /><circle cx="400" cy="200" r="93.33333333333333" fill="none" stroke="#00c8ff" stroke-width="0.5" opacity="0.06" /><circle cx="400" cy="200" r="120" fill="none" stroke="#00c8ff" stroke-width="0.5" opacity="0.02" /><circle cx="400" cy="200" r="146.66666666666666" fill="none" stroke="#00c8ff" stroke-width="0.5" opacity="-0.02" />
+            </g>
+
+            <!-- Quantum particles -->
+            <g class="particles" opacity="0.6">
+                <circle cx="290.4" cy="373.5" r="1.9" fill="#00c8ff" opacity="0.30" class="quantum-particle" style="animation-duration:5.3s; animation-delay:2.0s" /><circle cx="283.2" cy="104.0" r="1.2" fill="#00c8ff" opacity="0.23" class="quantum-particle" style="animation-duration:5.3s; animation-delay:1.1s" /><circle cx="400.6" cy="131.6" r="1.6" fill="#00c8ff" opacity="0.30" class="quantum-particle" style="animation-duration:6.6s; animation-delay:1.7s" /><circle cx="63.4" cy="345.4" r="1.4" fill="#00c8ff" opacity="0.26" class="quantum-particle" style="animation-duration:3.3s; animation-delay:0.6s" /><circle cx="795.2" cy="297.9" r="0.6" fill="#00c8ff" opacity="0.19" class="quantum-particle" style="animation-duration:4.5s; animation-delay:1.0s" /><circle cx="467.5" cy="42.1" r="1.5" fill="#00c8ff" opacity="0.31" class="quantum-particle" style="animation-duration:6.2s; animation-delay:1.4s" /><circle cx="743.1" cy="384.0" r="1.8" fill="#00c8ff" opacity="0.15" class="quantum-particle" style="animation-duration:4.9s; animation-delay:0.3s" /><circle cx="103.1" cy="42.1" r="0.7" fill="#00c8ff" opacity="0.17" class="quantum-particle" style="animation-duration:6.5s; animation-delay:2.0s" /><circle cx="441.4" cy="73.5" r="0.9" fill="#00c8ff" opacity="0.13" class="quantum-particle" style="animation-duration:3.2s; animation-delay:0.6s" /><circle cx="484.9" cy="246.7" r="1.2" fill="#00c8ff" opacity="0.15" class="quantum-particle" style="animation-duration:4.3s; animation-delay:0.4s" /><circle cx="175.2" cy="280.8" r="1.1" fill="#00c8ff" opacity="0.13" class="quantum-particle" style="animation-duration:5.0s; animation-delay:0.7s" /><circle cx="688.4" cy="141.1" r="0.7" fill="#00c8ff" opacity="0.11" class="quantum-particle" style="animation-duration:6.9s; animation-delay:1.4s" /><circle cx="170.2" cy="19.5" r="1.3" fill="#00c8ff" opacity="0.15" class="quantum-particle" style="animation-duration:6.3s; animation-delay:1.5s" /><circle cx="533.8" cy="20.8" r="0.9" fill="#00c8ff" opacity="0.32" class="quantum-particle" style="animation-duration:6.8s; animation-delay:1.0s" /><circle cx="361.0" cy="94.3" r="1.9" fill="#00c8ff" opacity="0.33" class="quantum-particle" style="animation-duration:6.0s; animation-delay:0.2s" /><circle cx="312.4" cy="374.9" r="1.4" fill="#00c8ff" opacity="0.19" class="quantum-particle" style="animation-duration:4.4s; animation-delay:1.1s" /><circle cx="611.5" cy="273.9" r="0.7" fill="#00c8ff" opacity="0.14" class="quantum-particle" style="animation-duration:3.2s; animation-delay:1.5s" /><circle cx="684.0" cy="173.6" r="0.6" fill="#00c8ff" opacity="0.40" class="quantum-particle" style="animation-duration:6.8s; animation-delay:0.2s" /><circle cx="767.6" cy="295.1" r="0.8" fill="#00c8ff" opacity="0.38" class="quantum-particle" style="animation-duration:3.8s; animation-delay:0.5s" /><circle cx="137.0" cy="245.4" r="0.9" fill="#00c8ff" opacity="0.26" class="quantum-particle" style="animation-duration:3.2s; animation-delay:0.6s" /><circle cx="481.5" cy="179.1" r="0.5" fill="#00c8ff" opacity="0.15" class="quantum-particle" style="animation-duration:5.4s; animation-delay:0.7s" /><circle cx="416.9" cy="354.9" r="0.7" fill="#00c8ff" opacity="0.25" class="quantum-particle" style="animation-duration:4.5s; animation-delay:1.7s" /><circle cx="433.8" cy="140.0" r="1.3" fill="#00c8ff" opacity="0.26" class="quantum-particle" style="animation-duration:5.5s; animation-delay:1.3s" /><circle cx="371.1" cy="180.7" r="1.6" fill="#00c8ff" opacity="0.30" class="quantum-particle" style="animation-duration:4.2s; animation-delay:0.7s" /><circle cx="67.6" cy="184.5" r="1.3" fill="#00c8ff" opacity="0.25" class="quantum-particle" style="animation-duration:3.2s; animation-delay:0.8s" /><circle cx="694.8" cy="16.5" r="1.0" fill="#00c8ff" opacity="0.31" class="quantum-particle" style="animation-duration:6.5s; animation-delay:0.0s" /><circle cx="484.0" cy="210.3" r="1.3" fill="#00c8ff" opacity="0.34" class="quantum-particle" style="animation-duration:5.7s; animation-delay:1.6s" /><circle cx="528.1" cy="300.3" r="1.2" fill="#00c8ff" opacity="0.31" class="quantum-particle" style="animation-duration:5.3s; animation-delay:1.3s" /><circle cx="296.2" cy="383.2" r="1.3" fill="#00c8ff" opacity="0.27" class="quantum-particle" style="animation-duration:5.4s; animation-delay:1.4s" /><circle cx="601.1" cy="22.3" r="1.8" fill="#00c8ff" opacity="0.21" class="quantum-particle" style="animation-duration:4.2s; animation-delay:0.5s" /><circle cx="364.9" cy="87.1" r="1.3" fill="#00c8ff" opacity="0.23" class="quantum-particle" style="animation-duration:4.4s; animation-delay:0.2s" /><circle cx="779.3" cy="376.8" r="1.3" fill="#00c8ff" opacity="0.30" class="quantum-particle" style="animation-duration:5.8s; animation-delay:0.3s" /><circle cx="15.6" cy="397.8" r="0.7" fill="#00c8ff" opacity="0.14" class="quantum-particle" style="animation-duration:6.7s; animation-delay:1.2s" /><circle cx="733.1" cy="291.4" r="0.8" fill="#00c8ff" opacity="0.26" class="quantum-particle" style="animation-duration:3.2s; animation-delay:0.6s" /><circle cx="787.1" cy="230.2" r="1.4" fill="#00c8ff" opacity="0.36" class="quantum-particle" style="animation-duration:5.6s; animation-delay:0.0s" /><circle cx="378.1" cy="98.9" r="0.7" fill="#00c8ff" opacity="0.34" class="quantum-particle" style="animation-duration:4.1s; animation-delay:0.1s" /><circle cx="606.7" cy="169.6" r="1.0" fill="#00c8ff" opacity="0.14" class="quantum-particle" style="animation-duration:5.7s; animation-delay:1.4s" /><circle cx="563.0" cy="266.9" r="0.6" fill="#00c8ff" opacity="0.29" class="quantum-particle" style="animation-duration:5.5s; animation-delay:2.0s" /><circle cx="342.4" cy="106.1" r="1.3" fill="#00c8ff" opacity="0.28" class="quantum-particle" style="animation-duration:5.4s; animation-delay:0.7s" /><circle cx="795.0" cy="350.2" r="1.8" fill="#00c8ff" opacity="0.31" class="quantum-particle" style="animation-duration:5.9s; animation-delay:1.9s" /><circle cx="143.1" cy="85.9" r="1.4" fill="#00c8ff" opacity="0.34" class="quantum-particle" style="animation-duration:3.9s; animation-delay:0.6s" /><circle cx="456.0" cy="267.4" r="1.5" fill="#00c8ff" opacity="0.25" class="quantum-particle" style="animation-duration:6.0s; animation-delay:1.6s" /><circle cx="156.8" cy="140.2" r="1.8" fill="#00c8ff" opacity="0.38" class="quantum-particle" style="animation-duration:4.0s; animation-delay:0.3s" /><circle cx="412.6" cy="156.5" r="1.7" fill="#00c8ff" opacity="0.23" class="quantum-particle" style="animation-duration:4.8s; animation-delay:0.3s" /><circle cx="164.2" cy="80.5" r="1.6" fill="#00c8ff" opacity="0.28" class="quantum-particle" style="animation-duration:4.2s; animation-delay:1.5s" /><circle cx="716.8" cy="59.2" r="1.9" fill="#00c8ff" opacity="0.29" class="quantum-particle" style="animation-duration:3.1s; animation-delay:2.0s" /><circle cx="723.0" cy="387.1" r="0.9" fill="#00c8ff" opacity="0.35" class="quantum-particle" style="animation-duration:5.0s; animation-delay:0.9s" /><circle cx="391.2" cy="25.1" r="2.0" fill="#00c8ff" opacity="0.26" class="quantum-particle" style="animation-duration:5.5s; animation-delay:1.2s" /><circle cx="228.0" cy="251.6" r="1.9" fill="#00c8ff" opacity="0.12" class="quantum-particle" style="animation-duration:6.0s; animation-delay:2.0s" /><circle cx="642.9" cy="58.0" r="1.5" fill="#00c8ff" opacity="0.25" class="quantum-particle" style="animation-duration:4.4s; animation-delay:0.9s" /><circle cx="552.5" cy="187.1" r="1.6" fill="#00c8ff" opacity="0.21" class="quantum-particle" style="animation-duration:4.1s; animation-delay:1.9s" /><circle cx="407.6" cy="143.2" r="1.3" fill="#00c8ff" opacity="0.21" class="quantum-particle" style="animation-duration:5.3s; animation-delay:0.3s" /><circle cx="432.0" cy="217.9" r="1.2" fill="#00c8ff" opacity="0.13" class="quantum-particle" style="animation-duration:4.9s; animation-delay:0.2s" /><circle cx="411.2" cy="365.1" r="1.7" fill="#00c8ff" opacity="0.16" class="quantum-particle" style="animation-duration:3.1s; animation-delay:0.1s" /><circle cx="322.9" cy="21.0" r="1.1" fill="#00c8ff" opacity="0.28" class="quantum-particle" style="animation-duration:4.6s; animation-delay:0.2s" /><circle cx="306.7" cy="328.3" r="1.2" fill="#00c8ff" opacity="0.39" class="quantum-particle" style="animation-duration:5.0s; animation-delay:1.5s" /><circle cx="618.4" cy="289.2" r="0.8" fill="#00c8ff" opacity="0.12" class="quantum-particle" style="animation-duration:5.8s; animation-delay:0.3s" /><circle cx="607.1" cy="292.6" r="1.3" fill="#00c8ff" opacity="0.12" class="quantum-particle" style="animation-duration:6.1s; animation-delay:0.8s" /><circle cx="406.2" cy="126.6" r="1.2" fill="#00c8ff" opacity="0.26" class="quantum-particle" style="animation-duration:4.1s; animation-delay:0.4s" /><circle cx="155.3" cy="62.9" r="1.6" fill="#00c8ff" opacity="0.37" class="quantum-particle" style="animation-duration:5.1s; animation-delay:0.3s" />
+            </g>
+
+            <!-- Central ring highlight -->
+            <circle cx="400" cy="200" r="54.666666666666664" fill="none" stroke="url(#techAccent)" stroke-width="1.0" opacity="0.40" />
+            <circle cx="400" cy="200" r="125.33333333333333" fill="none" stroke="url(#techAccent)" stroke-width="0.7" opacity="0.25" />
+
+            <!-- Pie chart slices -->
+            <g class="pie-chart">
+                
+                <g class="pie-slice tech-slice" style="animation-delay:0.00s">
+                    <!-- Glow layer -->
+                    <path d="M 472.3 104.2 A 120 120 0 0 0 280.0 200.0 L 340.0 200.0 A 60 60 0 0 1 436.2 152.1 Z" fill="none" stroke="hsl(261, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 472.3 104.2 A 120 120 0 0 0 280.0 200.0 L 340.0 200.0 A 60 60 0 0 1 436.2 152.1 Z" fill="hsl(261, 85%, 55%)" opacity="0.65" stroke="hsl(261, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>JavaScript - 35.3%</title>
+                    </path>
+                    <text x="359.9" y="119.4" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="8" font-weight="700" letter-spacing="0.7" filter="url(#textGlow)">35%</text>
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.12s">
+                    <!-- Glow layer -->
+                    <path d="M 511.9 243.3 A 120 120 0 0 0 472.3 104.2 L 436.2 152.1 A 60 60 0 0 1 455.9 221.7 Z" fill="none" stroke="hsl(26, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 511.9 243.3 A 120 120 0 0 0 472.3 104.2 L 436.2 152.1 A 60 60 0 0 1 455.9 221.7 Z" fill="hsl(26, 85%, 55%)" opacity="0.65" stroke="hsl(26, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>Java - 20.6%</title>
+                    </path>
+                    <text x="486.6" y="175.4" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="8" font-weight="700" letter-spacing="0.7" filter="url(#textGlow)">21%</text>
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.24s">
+                    <!-- Glow layer -->
+                    <path d="M 453.5 307.4 A 120 120 0 0 0 511.9 243.3 L 455.9 221.7 A 60 60 0 0 1 426.7 253.7 Z" fill="none" stroke="hsl(83, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 453.5 307.4 A 120 120 0 0 0 511.9 243.3 L 455.9 221.7 A 60 60 0 0 1 426.7 253.7 Z" fill="hsl(83, 85%, 55%)" opacity="0.65" stroke="hsl(83, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>CSS - 11.8%</title>
+                    </path>
+                    <text x="466.5" y="260.6" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="8" font-weight="700" letter-spacing="0.7" filter="url(#textGlow)">12%</text>
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.36s">
+                    <!-- Glow layer -->
+                    <path d="M 388.9 319.5 A 120 120 0 0 0 453.5 307.4 L 426.7 253.7 A 60 60 0 0 1 394.5 259.7 Z" fill="none" stroke="hsl(245, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 388.9 319.5 A 120 120 0 0 0 453.5 307.4 L 426.7 253.7 A 60 60 0 0 1 394.5 259.7 Z" fill="hsl(245, 85%, 55%)" opacity="0.65" stroke="hsl(245, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>TypeScript - 8.8%</title>
+                    </path>
+                    <text x="416.5" y="288.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="8" font-weight="700" letter-spacing="0.7" filter="url(#textGlow)">9%</text>
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.48s">
+                    <!-- Glow layer -->
+                    <path d="M 327.7 295.8 A 120 120 0 0 0 388.9 319.5 L 394.5 259.7 A 60 60 0 0 1 363.8 247.9 Z" fill="none" stroke="hsl(99, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 327.7 295.8 A 120 120 0 0 0 388.9 319.5 L 394.5 259.7 A 60 60 0 0 1 363.8 247.9 Z" fill="hsl(99, 85%, 55%)" opacity="0.65" stroke="hsl(99, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>HTML - 8.8%</title>
+                    </path>
+                    <text x="367.5" y="283.9" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="8" font-weight="700" letter-spacing="0.7" filter="url(#textGlow)">9%</text>
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.60s">
+                    <!-- Glow layer -->
+                    <path d="M 298.0 263.2 A 120 120 0 0 0 327.7 295.8 L 363.8 247.9 A 60 60 0 0 1 349.0 231.6 Z" fill="none" stroke="hsl(352, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 298.0 263.2 A 120 120 0 0 0 327.7 295.8 L 363.8 247.9 A 60 60 0 0 1 349.0 231.6 Z" fill="hsl(352, 85%, 55%)" opacity="0.65" stroke="hsl(352, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>PHP - 5.9%</title>
+                    </path>
+                    <text x="333.5" y="260.6" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="8" font-weight="700" letter-spacing="0.7" filter="url(#textGlow)">6%</text>
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.72s">
+                    <!-- Glow layer -->
+                    <path d="M 288.1 243.3 A 120 120 0 0 0 298.0 263.2 L 349.0 231.6 A 60 60 0 0 1 344.1 221.7 Z" fill="none" stroke="hsl(312, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 288.1 243.3 A 120 120 0 0 0 298.0 263.2 L 349.0 231.6 A 60 60 0 0 1 344.1 221.7 Z" fill="hsl(312, 85%, 55%)" opacity="0.65" stroke="hsl(312, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>C# - 2.9%</title>
+                    </path>
+                    
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.84s">
+                    <!-- Glow layer -->
+                    <path d="M 282.0 222.0 A 120 120 0 0 0 288.1 243.3 L 344.1 221.7 A 60 60 0 0 1 341.0 211.0 Z" fill="none" stroke="hsl(243, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 282.0 222.0 A 120 120 0 0 0 288.1 243.3 L 344.1 221.7 A 60 60 0 0 1 341.0 211.0 Z" fill="hsl(243, 85%, 55%)" opacity="0.65" stroke="hsl(243, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>C++ - 2.9%</title>
+                    </path>
+                    
+                </g>
+            
+                <g class="pie-slice tech-slice" style="animation-delay:0.96s">
+                    <!-- Glow layer -->
+                    <path d="M 280.0 200.0 A 120 120 0 0 0 282.0 222.0 L 341.0 211.0 A 60 60 0 0 1 340.0 200.0 Z" fill="none" stroke="hsl(345, 100%, 65%)" stroke-width="2.0" opacity="0.2" filter="url(#neonGlow)"/>
+                    <!-- Main slice -->
+                    <path d="M 280.0 200.0 A 120 120 0 0 0 282.0 222.0 L 341.0 211.0 A 60 60 0 0 1 340.0 200.0 Z" fill="hsl(345, 85%, 55%)" opacity="0.65" stroke="hsl(345, 100%, 65%)" stroke-width="1.0" filter="url(#innerGlow)">
+                        <title>Hack - 2.9%</title>
+                    </path>
+                    
+                </g>
+            
+            </g>
+
+            <!-- Center display -->
+            <circle cx="400" cy="200" r="52" fill="#0a0e27" opacity="0.30" />
+            <circle cx="400" cy="200" r="53.333333333333336" fill="none" stroke="#00c8ff" stroke-width="0.7" opacity="0.50" />
+
+            <!-- Title with tech styling -->
+            <text x="400" y="188" text-anchor="middle" fill="#00c8ff" font-size="13" font-weight="700" letter-spacing="1.3333333333333333" filter="url(#textGlow)">[ TOP 8 ]</text>
+            <text x="400" y="208" text-anchor="middle" fill="#00c8ff" font-size="9" font-weight="700" letter-spacing="1.3333333333333333" opacity="0.60">LANGUAGES</text>
+
+            <!-- Legend panel with tech border -->
+            <g class="legend-panel">
+                <!-- Panel background -->
+                <rect x="620.0000000000001" y="43.33333333333333" width="160" height="178.66666666666666" rx="2.6666666666666665" fill="#0a0e27" fill-opacity="0.15" stroke="#00c8ff" stroke-width="0.7" stroke-opacity="0.6" />
+                <!-- Corner accents -->
+                <line x1="623.3333333333334" y1="53.33333333333333" x2="623.3333333333334" y2="63.33333333333333" stroke="#00c8ff" stroke-width="0.7" opacity="0.8" />
+                <line x1="626.6666666666667" y1="46.666666666666664" x2="640.0000000000001" y2="46.666666666666664" stroke="#00c8ff" stroke-width="0.7" opacity="0.8" />
+            </g>
+
+            <!-- Legend items -->
+            <g class="legend" filter="url(#textGlow)">
+                
+                <g class="legend-item tech-item" style="animation-delay:0.40s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="65.33333333333333" r="3.333333333333333" fill="hsl(261, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="68.66666666666666" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">JavaScript</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="68.66666666666666" text-anchor="end" fill="hsl(261, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">35.3%</text>
+                </g>
+            
+                <g class="legend-item tech-item" style="animation-delay:0.48s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="82.66666666666666" r="3.333333333333333" fill="hsl(26, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="85.99999999999999" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">Java</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="85.99999999999999" text-anchor="end" fill="hsl(26, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">20.6%</text>
+                </g>
+            
+                <g class="legend-item tech-item" style="animation-delay:0.56s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="99.99999999999999" r="3.333333333333333" fill="hsl(83, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="103.33333333333331" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">CSS</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="103.33333333333331" text-anchor="end" fill="hsl(83, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">11.8%</text>
+                </g>
+            
+                <g class="legend-item tech-item" style="animation-delay:0.64s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="117.33333333333333" r="3.333333333333333" fill="hsl(245, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="120.66666666666666" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">TypeScript</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="120.66666666666666" text-anchor="end" fill="hsl(245, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">8.8%</text>
+                </g>
+            
+                <g class="legend-item tech-item" style="animation-delay:0.72s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="134.66666666666666" r="3.333333333333333" fill="hsl(99, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="138" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">HTML</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="138" text-anchor="end" fill="hsl(99, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">8.8%</text>
+                </g>
+            
+                <g class="legend-item tech-item" style="animation-delay:0.80s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="151.99999999999997" r="3.333333333333333" fill="hsl(352, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="155.33333333333331" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">PHP</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="155.33333333333331" text-anchor="end" fill="hsl(352, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">5.9%</text>
+                </g>
+            
+                <g class="legend-item tech-item" style="animation-delay:0.88s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="169.33333333333331" r="3.333333333333333" fill="hsl(312, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="172.66666666666666" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">C#</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="172.66666666666666" text-anchor="end" fill="hsl(312, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">2.9%</text>
+                </g>
+            
+                <g class="legend-item tech-item" style="animation-delay:0.96s">
+                    <!-- Indicator dot -->
+                    <circle cx="634.6666666666667" cy="186.66666666666666" r="3.333333333333333" fill="hsl(243, 85%, 55%)" opacity="0.60" filter="url(#dotGlow)" />
+                    <!-- Language name -->
+                    <text x="642.6666666666667" y="190" fill="#ffffff" font-size="9" font-weight="600" letter-spacing="0.3333333333333333">C++</text>
+                    <!-- Percentage -->
+                    <text x="765.3333333333334" y="190" text-anchor="end" fill="hsl(243, 100%, 70%)" font-size="8" font-weight="700" letter-spacing="0.6666666666666666">2.9%</text>
+                </g>
+            
+            </g>
+        
+  </svg>
+</svg>

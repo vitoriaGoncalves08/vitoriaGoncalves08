@@ -16,7 +16,7 @@
 <h3 align="center">Github Stats</h3>
 
 <p align="center">
-  <img height="340" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=pie" />
+  <img height="340" src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stats.svg" alt="github stats" />
 </p>
 
 <br>

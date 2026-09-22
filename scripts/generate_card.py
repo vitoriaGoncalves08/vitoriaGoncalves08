@@ -49,8 +49,6 @@ ACCENT = "#bd93f9"             # ASCII art color (purple)
 HEADER_COLOR = "#ff79c6"       # bold pink "login@login" header + prompt user/path
 LABEL_COLOR = "#f8f8f2"        # bold field labels
 VALUE_COLOR = "#8be9fd"        # field values (cyan)
-PALETTE = ["#ff5555", "#50fa7b", "#f1fa8c", "#bd93f9",
-           "#ff79c6", "#8be9fd", "#ffb86c", "#f8f8f2"]
 
 PROMPT_COMMANDS = [
     "desenvolvedora de software",
@@ -343,8 +341,6 @@ def build_svg(art_rows, fields):
     FIELD_LINE_H = 22
     HEADER_H = 26
     RULE_GAP = 10
-    SWATCH = 20
-    SWATCH_GAP = 8
     PROMPT_H = 62
 
     info_x = PAD + ART_W + GAP
@@ -353,8 +349,7 @@ def build_svg(art_rows, fields):
     fields_start_y = rule_y + 30
 
     fields_h = len(fields) * FIELD_LINE_H
-    swatch_y = fields_start_y + fields_h + 14
-    info_bottom = swatch_y + SWATCH + 10
+    info_bottom = fields_start_y + fields_h + 10
 
     ART_OFFSET_Y = -12
 
@@ -394,16 +389,6 @@ def build_svg(art_rows, fields):
             f'<tspan class="value">{xml_escape(value)}</tspan></text>'
         )
     fields_svg = "".join(field_lines)
-
-    swatch_lines = []
-    for i, color in enumerate(PALETTE):
-        x = info_x + i * (SWATCH + SWATCH_GAP)
-        delay = 0.5 + len(fields) * 0.06 + i * 0.05
-        swatch_lines.append(
-            f'\n      <rect x="{x:.1f}" y="{swatch_y:.1f}" width="{SWATCH}" height="{SWATCH}" rx="3" '
-            f'fill="{color}" stroke="#2a3350" stroke-width="1" class="swatch" style="animation-delay:{delay:.2f}s" />'
-        )
-    swatch_svg = "".join(swatch_lines)
 
     prompt_line1 = f"┌──({LOGIN}@github-[~]"
     prompt_line2 = "└─$ "
@@ -451,9 +436,7 @@ def build_svg(art_rows, fields):
       {prompt_style}
       .fadein {{ animation-name: reveal; animation-duration: 0.35s; animation-fill-mode: forwards; animation-timing-function: steps(1); }}
       .typewriter {{ animation-name: reveal; animation-duration: 0.4s; animation-fill-mode: forwards; animation-timing-function: steps(1); }}
-      .swatch {{ animation-name: revealSwatch; animation-duration: 0.35s; animation-fill-mode: forwards; animation-timing-function: steps(1); }}
       @keyframes reveal {{ 0% {{ opacity: 0; }} 1%, 100% {{ opacity: 1; }} }}
-      @keyframes revealSwatch {{ 0% {{ opacity: 0; }} 1%, 100% {{ opacity: 1; }} }}
       @keyframes blink {{ 0%, 49% {{ opacity: 1; }} 50%, 100% {{ opacity: 0; }} }}
     </style>
     {prompt_defs}
@@ -464,7 +447,6 @@ def build_svg(art_rows, fields):
 
   {header_svg}
   {fields_svg}
-  {swatch_svg}
 
   {prompt_svg}
 </svg>
