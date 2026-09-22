@@ -24,7 +24,7 @@
 <h3 align="center">Tech Stack & Tools</h3>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stack.svg" alt="tech stack" />
+  <img width="45%" src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stack.svg" alt="tech stack" />
 </p>
 
 <br>
