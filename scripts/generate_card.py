@@ -46,7 +46,7 @@ BG_COLOR = "#282a36"          # terminal window background
 TITLEBAR_COLOR = "#21222c"    # title bar strip
 TITLE_TEXT_COLOR = "#6272a4"
 ACCENT = "#bd93f9"             # ASCII art color (purple)
-HEADER_COLOR = "#ff79c6"       # bold pink "login@login" header + prompt user/path
+HEADER_COLOR = "#9580ff"       # bold purple "login@login" header + prompt user/path
 LABEL_COLOR = "#f8f8f2"        # bold field labels
 VALUE_COLOR = "#8be9fd"        # field values (cyan)
 

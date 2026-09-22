@@ -34,11 +34,11 @@ ICONS = [
     ("python", "original", "#3776AB"),
 ]
 
-CARD = 90
-GAP = 18
-PAD = 24
+CARD = 76
+GAP = 16
+PAD = 22
 COLUMNS = 6
-ICON_SIZE = 50
+ICON_SIZE = 40
 
 
 def fetch_icon(slug, variant):

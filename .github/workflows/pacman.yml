@@ -32,8 +32,8 @@ jobs:
 
             - name: wrap graphs in terminal chrome
               run: |
-                  python scripts/wrap_terminal.py dist/pacman-contribution-graph.svg dist/pacman-contribution-graph.svg "vitoriaGoncalves08@github: contributions"
-                  python scripts/wrap_terminal.py dist/pacman-contribution-graph-dark.svg dist/pacman-contribution-graph-dark.svg "vitoriaGoncalves08@github: contributions"
+                  python scripts/wrap_terminal.py dist/pacman-contribution-graph.svg dist/pacman-contribution-graph.svg "vitoriaGoncalves08@github: contributions" 1.18
+                  python scripts/wrap_terminal.py dist/pacman-contribution-graph-dark.svg dist/pacman-contribution-graph-dark.svg "vitoriaGoncalves08@github: contributions" 1.18
 
             - name: push SVGs to the pacman-output branch
               uses: crazy-max/ghaction-github-pages@v3.1.0

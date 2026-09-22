@@ -6,7 +6,10 @@ ascii profile card, so every generated asset in the README shares one
 visual language.
 
 Usage:
-    python scripts/wrap_terminal.py <input.svg> <output.svg> "<title text>"
+    python scripts/wrap_terminal.py <input.svg> <output.svg> "<title text>" [scale]
+
+`scale` (default 1.0) enlarges the wrapped graphic without touching its
+own generator - e.g. 1.15 renders it 15% bigger inside the window.
 """
 
 import re
@@ -21,7 +24,7 @@ TITLEBAR_H = 34
 RADIUS = 10
 
 
-def wrap(input_path, output_path, title):
+def wrap(input_path, output_path, title, scale=1.0):
     with open(input_path, "r", encoding="utf-8") as f:
         original = f.read()
 
@@ -34,8 +37,10 @@ def wrap(input_path, output_path, title):
     height_match = re.search(r'height="([\d.]+)', root_tag)
     if not (width_match and height_match):
         raise ValueError(f"could not read width/height from {input_path}")
-    inner_w = float(width_match.group(1))
-    inner_h = float(height_match.group(1))
+    orig_w = float(width_match.group(1))
+    orig_h = float(height_match.group(1))
+    inner_w = orig_w * scale
+    inner_h = orig_h * scale
 
     inner_content = original[root_match.end():]
     inner_content = re.sub(r"</svg>\s*$", "", inner_content.strip(), flags=re.S)
@@ -53,7 +58,7 @@ def wrap(input_path, output_path, title):
   <text x="{total_w/2:.0f}" y="{TITLEBAR_H/2 + 5:.0f}" text-anchor="middle"
         font-family="Courier New, monospace" font-size="13" fill="{TITLE_TEXT_COLOR}">{title}</text>
   <line x1="0" y1="{TITLEBAR_H}" x2="{total_w:.0f}" y2="{TITLEBAR_H}" stroke="#3a3d55" stroke-width="1" />
-  <svg x="{PAD}" y="{PAD + TITLEBAR_H}" width="{inner_w:.0f}" height="{inner_h:.0f}" viewBox="0 0 {inner_w:.0f} {inner_h:.0f}">
+  <svg x="{PAD}" y="{PAD + TITLEBAR_H}" width="{inner_w:.0f}" height="{inner_h:.0f}" viewBox="0 0 {orig_w:.0f} {orig_h:.0f}">
     {inner_content}
   </svg>
 </svg>
@@ -65,7 +70,8 @@ def wrap(input_path, output_path, title):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("usage: wrap_terminal.py <input.svg> <output.svg> <title>", file=sys.stderr)
+    if len(sys.argv) not in (4, 5):
+        print("usage: wrap_terminal.py <input.svg> <output.svg> <title> [scale]", file=sys.stderr)
         sys.exit(1)
-    wrap(sys.argv[1], sys.argv[2], sys.argv[3])
+    scale_arg = float(sys.argv[4]) if len(sys.argv) == 5 else 1.0
+    wrap(sys.argv[1], sys.argv[2], sys.argv[3], scale_arg)

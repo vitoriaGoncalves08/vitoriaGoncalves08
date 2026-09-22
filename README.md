@@ -13,10 +13,10 @@
 --- -->
 
 
-<h3 align="center">Github Stats</h3>
+<h3 align="center">Github Status</h3>
 
 <p align="center">
-  <img height="340" src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stats.svg" alt="github stats" />
+  <img width="100%" src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stats.svg" alt="github stats" />
 </p>
 
 <br>
@@ -39,7 +39,7 @@
     <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Gmail"/>
   </a>
   <a href="https://www.linkedin.com/in/vit%C3%B3ria-gon%C3%A7alves-passos/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/>
+    <img src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/linkedin-badge.svg" alt="LinkedIn"/>
   </a>
 </p>
 
