@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/profile.svg" alt="animated ascii profile card" width="100%" />
 </p>
 
-<br>
+<!-- <br>
 
 ---
 
@@ -10,7 +10,24 @@
 
 <br>
 
----
+--- -->
+
+
+<h3 align="center">Github Stats</h3>
+
+<p align="center">
+  <img height="340" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=pie" />
+</p>
+
+<br>
+
+<h3 align="center">Tech Stack & Tools</h3>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stack.svg" alt="tech stack" />
+</p>
+
+<br>
 
 <h3 align="center">Connect With Me</h3>
 
@@ -28,43 +45,21 @@
 
 <br>
 
----
-
-<h3 align="center">Github Stats</h3>
-
-<p align="center">
-  <img height="340" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=pie" />
-</p>
-
-<br>
-
----
-
-<h3 align="center">Tech Stack & Tools</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,angular,java,spring,aws,git,docker,py&perline=6" />
-</p>
-
-<br>
-
----
-
 <h3 align="center">Contribution Activity</h3>
 
 <div align="center">
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/output/pacman-contribution-graph-dark.svg"
+      srcset="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/pacman-output/pacman-contribution-graph-dark.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/output/pacman-contribution-graph.svg"
+      srcset="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/pacman-output/pacman-contribution-graph.svg"
     />
     <img
       alt="github-contribution-pacman"
-      src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/output/pacman-contribution-graph-dark.svg"
+      src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/pacman-output/pacman-contribution-graph-dark.svg"
     />
   </picture>
 </div>
