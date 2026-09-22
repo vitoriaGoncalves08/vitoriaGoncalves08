@@ -28,11 +28,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch languages pie chart
-        run: curl -sL -o /tmp/raw-stats.svg "https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=pie"
-
-      - name: Wrap chart in terminal chrome
-        run: python scripts/wrap_terminal.py /tmp/raw-stats.svg assets/stats.svg "vitoriaGoncalves08@github: stats"
+      - name: Generate language stats card
+        env:
+          GITHUB_LOGIN: vitoriaGoncalves08
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUT_PATH: assets/stats.svg
+        run: python scripts/generate_stats.py
 
       - name: Commit and push if changed
         run: |

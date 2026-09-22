@@ -16,24 +16,11 @@ jobs:
         timeout-minutes: 20
 
         steps:
-            - name: Checkout repository
-              uses: actions/checkout@v4
-
-            - name: Set up Python
-              uses: actions/setup-python@v5
-              with:
-                  python-version: '3.12'
-
             - name: generate contribution graph SVGs
               uses: abozanona/pacman-contribution-graph@main
               with:
                   github_user_name: ${{ github.repository_owner }}
                   games: 'pacman'
-
-            - name: wrap graphs in terminal chrome
-              run: |
-                  python scripts/wrap_terminal.py dist/pacman-contribution-graph.svg dist/pacman-contribution-graph.svg "vitoriaGoncalves08@github: contributions" 1.18
-                  python scripts/wrap_terminal.py dist/pacman-contribution-graph-dark.svg dist/pacman-contribution-graph-dark.svg "vitoriaGoncalves08@github: contributions" 1.18
 
             - name: push SVGs to the pacman-output branch
               uses: crazy-max/ghaction-github-pages@v3.1.0

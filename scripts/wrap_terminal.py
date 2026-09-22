@@ -24,31 +24,28 @@ TITLEBAR_H = 34
 RADIUS = 10
 
 
-def wrap(input_path, output_path, title, scale=1.0):
-    with open(input_path, "r", encoding="utf-8") as f:
-        original = f.read()
-
-    root_match = re.search(r"<svg[^>]*>", original)
+def wrap_svg_string(svg_text, title, scale=1.0):
+    root_match = re.search(r"<svg[^>]*>", svg_text)
     if not root_match:
-        raise ValueError(f"no <svg> root tag found in {input_path}")
+        raise ValueError("no <svg> root tag found")
     root_tag = root_match.group(0)
 
     width_match = re.search(r'width="([\d.]+)', root_tag)
     height_match = re.search(r'height="([\d.]+)', root_tag)
     if not (width_match and height_match):
-        raise ValueError(f"could not read width/height from {input_path}")
+        raise ValueError("could not read width/height from svg root tag")
     orig_w = float(width_match.group(1))
     orig_h = float(height_match.group(1))
     inner_w = orig_w * scale
     inner_h = orig_h * scale
 
-    inner_content = original[root_match.end():]
+    inner_content = svg_text[root_match.end():]
     inner_content = re.sub(r"</svg>\s*$", "", inner_content.strip(), flags=re.S)
 
     total_w = inner_w + 2 * PAD
     total_h = inner_h + 2 * PAD + TITLEBAR_H
 
-    chrome = f'''<svg width="{total_w:.0f}" height="{total_h:.0f}" viewBox="0 0 {total_w:.0f} {total_h:.0f}" xmlns="http://www.w3.org/2000/svg">
+    return f'''<svg width="{total_w:.0f}" height="{total_h:.0f}" viewBox="0 0 {total_w:.0f} {total_h:.0f}" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="0" width="{total_w:.0f}" height="{total_h:.0f}" rx="{RADIUS}" fill="{BG_COLOR}" />
   <path d="M0,{RADIUS} a{RADIUS},{RADIUS} 0 0 1 {RADIUS},-{RADIUS} h{total_w - 2*RADIUS:.0f} a{RADIUS},{RADIUS} 0 0 1 {RADIUS},{RADIUS} v{TITLEBAR_H - RADIUS:.0f} h-{total_w:.0f} z"
         fill="{TITLEBAR_COLOR}" />
@@ -63,6 +60,13 @@ def wrap(input_path, output_path, title, scale=1.0):
   </svg>
 </svg>
 '''
+
+
+def wrap(input_path, output_path, title, scale=1.0):
+    with open(input_path, "r", encoding="utf-8") as f:
+        original = f.read()
+
+    chrome = wrap_svg_string(original, title, scale)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(chrome)
