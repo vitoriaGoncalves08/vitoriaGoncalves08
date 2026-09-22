@@ -16,7 +16,7 @@
 <h3 align="center">Github Status</h3>
 
 <p align="center">
-  <img width="70%" src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stats.svg" alt="github stats" />
+  <img width="65%" src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stats.svg" alt="github stats" />
 </p>
 
 <br>
@@ -24,7 +24,7 @@
 <h3 align="center">Tech Stack & Tools</h3>
 
 <p align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stack.svg" alt="tech stack" />
+  <img src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/main/assets/stack.svg" alt="tech stack" />
 </p>
 
 <br>
