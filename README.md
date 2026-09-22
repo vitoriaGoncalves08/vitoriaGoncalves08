@@ -1,23 +1,63 @@
-### Olá, eu sou a Vitória Gonçalves✨
+<h1 align="center">Olá, eu sou a Vitória Gonçalves ✨</h1>
+
+<br>
+
+---
+
+<h3 align="center">Connect With Me</h3>
+
+<p align="center">
+  <a href="https://instagram.com/vigoncalves_p" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=E4405F" alt="Instagram"/>
+  </a>
+  <a href="mailto:vipassos03@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Gmail"/>
+  </a>
+  <a href="https://www.linkedin.com/in/vit%C3%B3ria-gon%C3%A7alves-passos/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/>
+  </a>
+</p>
+
+<br>
+
+---
+
+<h3 align="center">Github Stats</h3>
+
+<p align="center">
+  <img height="190" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=card" />
+  <img height="190" src="https://stats.pphat.top/languages?username=vitoriaGoncalves08&type=pie" />
+</p>
+
+<br>
+
+---
+
+<h3 align="center">Tech Stack & Tools</h3>
+
+<p align="center">
+  <img src="https://stats.pphat.top/icons?name=js,react,html,css,python,java&effect=wave&columns=6" />
+</p>
+
+<br>
+
+---
+
+<h3 align="center">Contribution Activity</h3>
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=vitoriaGoncalves08&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vitoriaGoncalves08&layout=compact&langs_count=7&theme=dracula"/>
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/output/pacman-contribution-graph-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/output/pacman-contribution-graph.svg"
+    />
+    <img
+      alt="github-contribution-pacman"
+      src="https://raw.githubusercontent.com/vitoriaGoncalves08/vitoriaGoncalves08/output/pacman-contribution-graph-dark.svg"
+    />
+  </picture>
 </div>
-    
-  <div style="display: inline_block"><br>
-  <img align="center" alt="Vih-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Vih-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-  <img align="center" alt="Vih-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Vih-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Vih-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="center" alt="Vih-Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-</div>
-  
-##
-  
-<div> 
-    <a href="https://instagram.com/vigoncalves_p" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
-    <a href = "mailto:vipassos03@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-    <a href="https://www.linkedin.com/in/vit%C3%B3ria-gon%C3%A7alves-passos/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div
