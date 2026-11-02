@@ -33,36 +33,36 @@
   <g id="spinner">
     
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#ED8B00" stroke-width="28"
-            stroke-dasharray="129.45 335.51"
+            stroke-dasharray="129.57 335.38"
             stroke-dashoffset="-0.00"
             class="segment" style="animation-delay:0.0s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#F7DF1E" stroke-width="28"
-            stroke-dasharray="116.15 348.80"
-            stroke-dashoffset="-129.45"
+            stroke-dasharray="115.97 348.98"
+            stroke-dashoffset="-129.57"
             class="segment" style="animation-delay:0.12s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#1572B6" stroke-width="28"
-            stroke-dasharray="73.84 391.12"
-            stroke-dashoffset="-245.60"
+            stroke-dasharray="73.90 391.06"
+            stroke-dashoffset="-245.55"
             class="segment" style="animation-delay:0.24s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#3178C6" stroke-width="28"
-            stroke-dasharray="68.81 396.15"
-            stroke-dashoffset="-319.44"
+            stroke-dasharray="68.87 396.08"
+            stroke-dashoffset="-319.45"
             class="segment" style="animation-delay:0.36s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#777BB4" stroke-width="28"
-            stroke-dasharray="33.05 431.91"
-            stroke-dashoffset="-388.25"
+            stroke-dasharray="33.08 431.88"
+            stroke-dashoffset="-388.32"
             class="segment" style="animation-delay:0.48s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#3776AB" stroke-width="28"
-            stroke-dasharray="21.12 443.84"
-            stroke-dashoffset="-421.29"
+            stroke-dasharray="21.14 443.82"
+            stroke-dashoffset="-421.40"
             class="segment" style="animation-delay:0.6s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#878787" stroke-width="28"
-            stroke-dasharray="11.49 453.47"
-            stroke-dashoffset="-442.41"
+            stroke-dasharray="11.50 453.46"
+            stroke-dashoffset="-442.54"
             class="segment" style="animation-delay:0.72s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#E34F26" stroke-width="28"
-            stroke-dasharray="11.06 453.90"
-            stroke-dashoffset="-453.90"
+            stroke-dasharray="10.92 454.03"
+            stroke-dashoffset="-454.03"
             class="segment" style="animation-delay:0.84s" />
   </g>
   <text x="116.0" y="128.0" class="center-label" font-size="12" font-weight="bold">TOP 8</text>
@@ -71,12 +71,12 @@
   <g class="legend-row" style="animation-delay:0.3s">
     <circle cx="249.0" cy="37.0" r="5" fill="#ED8B00" />
     <text x="262.0" y="41.0" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">Java</text>
-    <text x="474.0" y="41.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">27.8%</text>
+    <text x="474.0" y="41.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">27.9%</text>
   </g>
   <g class="legend-row" style="animation-delay:0.4s">
     <circle cx="249.0" cy="63.0" r="5" fill="#F7DF1E" />
     <text x="262.0" y="67.0" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">JavaScript</text>
-    <text x="474.0" y="67.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">25.0%</text>
+    <text x="474.0" y="67.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">24.9%</text>
   </g>
   <g class="legend-row" style="animation-delay:0.5s">
     <circle cx="249.0" cy="89.0" r="5" fill="#1572B6" />
@@ -106,7 +106,7 @@
   <g class="legend-row" style="animation-delay:1.0s">
     <circle cx="249.0" cy="219.0" r="5" fill="#E34F26" />
     <text x="262.0" y="223.0" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">HTML</text>
-    <text x="474.0" y="223.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">2.4%</text>
+    <text x="474.0" y="223.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">2.3%</text>
   </g>
 
   </svg>
