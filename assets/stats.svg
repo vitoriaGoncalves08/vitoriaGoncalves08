@@ -33,36 +33,36 @@
   <g id="spinner">
     
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#ED8B00" stroke-width="28"
-            stroke-dasharray="112.01 352.95"
+            stroke-dasharray="110.90 354.05"
             stroke-dashoffset="-0.00"
             class="segment" style="animation-delay:0.0s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#F7DF1E" stroke-width="28"
-            stroke-dasharray="110.50 354.45"
-            stroke-dashoffset="-112.01"
+            stroke-dasharray="109.41 355.55"
+            stroke-dashoffset="-110.90"
             class="segment" style="animation-delay:0.12s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#3178C6" stroke-width="28"
-            stroke-dasharray="92.73 372.22"
-            stroke-dashoffset="-222.51"
+            stroke-dasharray="95.33 369.62"
+            stroke-dashoffset="-220.31"
             class="segment" style="animation-delay:0.24s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#1572B6" stroke-width="28"
-            stroke-dasharray="80.84 384.12"
-            stroke-dashoffset="-315.24"
+            stroke-dasharray="81.12 383.83"
+            stroke-dashoffset="-315.64"
             class="segment" style="animation-delay:0.36s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#777BB4" stroke-width="28"
-            stroke-dasharray="28.59 436.36"
-            stroke-dashoffset="-396.08"
+            stroke-dasharray="28.31 436.64"
+            stroke-dashoffset="-396.76"
             class="segment" style="animation-delay:0.48s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#3776AB" stroke-width="28"
-            stroke-dasharray="18.27 446.68"
-            stroke-dashoffset="-424.68"
+            stroke-dasharray="18.09 446.86"
+            stroke-dashoffset="-425.07"
             class="segment" style="animation-delay:0.6s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#E34F26" stroke-width="28"
-            stroke-dasharray="12.07 452.89"
-            stroke-dashoffset="-442.95"
+            stroke-dasharray="11.95 453.01"
+            stroke-dashoffset="-443.17"
             class="segment" style="animation-delay:0.72s" />
     <circle cx="116.0" cy="132.0" r="74" fill="none" stroke="#878787" stroke-width="28"
-            stroke-dasharray="9.94 455.02"
-            stroke-dashoffset="-455.02"
+            stroke-dasharray="9.84 455.12"
+            stroke-dashoffset="-455.12"
             class="segment" style="animation-delay:0.84s" />
   </g>
   <text x="116.0" y="128.0" class="center-label" font-size="12" font-weight="bold">TOP 8</text>
@@ -71,17 +71,17 @@
   <g class="legend-row" style="animation-delay:0.3s">
     <circle cx="249.0" cy="37.0" r="5" fill="#ED8B00" />
     <text x="262.0" y="41.0" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">Java</text>
-    <text x="474.0" y="41.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">24.1%</text>
+    <text x="474.0" y="41.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">23.9%</text>
   </g>
   <g class="legend-row" style="animation-delay:0.4s">
     <circle cx="249.0" cy="63.0" r="5" fill="#F7DF1E" />
     <text x="262.0" y="67.0" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">JavaScript</text>
-    <text x="474.0" y="67.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">23.8%</text>
+    <text x="474.0" y="67.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">23.5%</text>
   </g>
   <g class="legend-row" style="animation-delay:0.5s">
     <circle cx="249.0" cy="89.0" r="5" fill="#3178C6" />
     <text x="262.0" y="93.0" font-family="Courier New, monospace" font-size="13" fill="#f8f8f2">TypeScript</text>
-    <text x="474.0" y="93.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">19.9%</text>
+    <text x="474.0" y="93.0" text-anchor="end" font-family="Courier New, monospace" font-size="12" fill="#6272a4">20.5%</text>
   </g>
   <g class="legend-row" style="animation-delay:0.6s">
     <circle cx="249.0" cy="115.0" r="5" fill="#1572B6" />
